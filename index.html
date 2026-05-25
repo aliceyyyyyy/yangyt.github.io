@@ -1,12 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
-</head>
-<body>
-    <h1>你好，世界！</h1>
-    <p>欢迎来到我的第一个个人网站。这里是使用 GitHub Pages 搭建的。</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="杨雨潼，中山大学网络空间安全本科生，关注多模态学习、计算机视觉、AI 安全与系统交互。"
+    />
+    <title>杨雨潼 | 个人主页</title>
+    <link rel="preload" href="assets/profile.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-elevated="true">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span>杨雨潼</span>
+        <small>SYSU · Cybersecurity</small>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#education">教育</a>
+        <a href="#projects">项目</a>
+        <a href="#honors">荣誉</a>
+        <a href="#skills">能力</a>
+        <a href="#experience">经历</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="切换深浅色" title="切换深浅色">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <button class="icon-button menu-toggle" type="button" aria-label="打开导航" title="导航">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" aria-label="移动导航" data-open="false">
+      <a href="#education">教育</a>
+      <a href="#projects">项目</a>
+      <a href="#honors">荣誉</a>
+      <a href="#skills">能力</a>
+      <a href="#experience">经历</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero compact-hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">中山大学 · 网络空间安全（鸿网创新班）</p>
+          <h1>杨雨潼</h1>
+          <p class="hero-subtitle">
+            关注多模态学习、计算机视觉与 AI 安全，擅长将算法研究、系统工程和可视化交互结合为完整原型。
+          </p>
+
+          <div class="contact-strip" aria-label="联系方式">
+            <a href="tel:+8618576786836">电话：+86 185-7678-6836</a>
+            <a href="mailto:yangyt93@mail2.sysu.edu.cn">邮箱：yangyt93@mail2.sysu.edu.cn</a>
+            <button class="text-copy copy-wechat" type="button" data-copy="yyt060805">微信：yyt060805</button>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="assets/yang-yutong-resume.pdf" target="_blank" rel="noreferrer">查看简历</a>
+            <a class="button secondary" href="#projects">浏览项目</a>
+          </div>
+        </div>
+
+        <aside class="portrait-card reveal" aria-label="个人照片与概览">
+          <div class="portrait-frame">
+            <img src="assets/profile.jpg" alt="杨雨潼个人照片" />
+          </div>
+          <div class="metric-grid">
+            <div>
+              <strong>Top 10%</strong>
+              <span>专业排名</span>
+            </div>
+            <div>
+              <strong>3.9/5</strong>
+              <span>GPA</span>
+            </div>
+            <div>
+              <strong>CET-6 632</strong>
+              <span>IELTS 7.5</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Education</p>
+          <h2>教育背景</h2>
+        </div>
+
+        <div class="education-card reveal">
+          <div>
+            <span class="time">2024/08 - 至今</span>
+            <h3>中山大学 · 网络空间安全（鸿网创新班）</h3>
+            <p>本科在读，GPA 3.9/5，专业成绩排名前 10%。</p>
+          </div>
+          <dl>
+            <div>
+              <dt>核心课程</dt>
+              <dd>程序设计 II（95）、数据库系统原理（95）、数据结构与算法实验（100）</dd>
+            </div>
+            <div>
+              <dt>学生工作</dt>
+              <dd>院团委学生副书记；院学生会秘书部部长</dd>
+            </div>
+            <div>
+              <dt>语言能力</dt>
+              <dd>CET-6 632，雅思 7.5，具备专业英文文献阅读与写作能力。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section band" id="projects">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Projects</p>
+          <h2>代表项目</h2>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card reveal" href="projects/uav-detection.html">
+            <div class="project-thumb visual-uav" aria-hidden="true">
+              <span>Multimodal Detection</span>
+            </div>
+            <div class="project-meta">
+              <span>2025/09 - 至今</span>
+              <span>成员</span>
+            </div>
+            <h3>多模态低空无人机侦测与追踪</h3>
+            <p>基于 Transformer 检测框架构建可见光-事件相机双模态模型，mAP 提升约 2%。</p>
+            <span class="read-more">查看详情</span>
+          </a>
+
+          <a class="project-card featured reveal" href="projects/heritage-platform.html">
+            <div class="project-thumb visual-heritage" aria-hidden="true">
+              <span>3D Interaction</span>
+            </div>
+            <div class="project-meta">
+              <span>2026/02 - 2026/05</span>
+              <span>负责人</span>
+            </div>
+            <h3>古建筑数字化识别与交互平台</h3>
+            <p>面向古建筑构件识别、3D 语义映射与文旅交互，获“挑战杯”省级银奖。</p>
+            <span class="read-more">查看详情</span>
+          </a>
+
+          <a class="project-card reveal" href="projects/ai-security.html">
+            <div class="project-thumb visual-security" aria-hidden="true">
+              <span>AI Security</span>
+            </div>
+            <div class="project-meta">
+              <span>2025/06 - 2025/12</span>
+              <span>成员</span>
+            </div>
+            <h3>模型安全与隐私保障一体化框架</h3>
+            <p>融合量子计算与边缘智能，实现数据投毒检测与隐私保护的一体化系统原型。</p>
+            <span class="read-more">查看详情</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="honors">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Honors</p>
+          <h2>荣誉与竞赛</h2>
+        </div>
+
+        <div class="honor-grid">
+          <article class="honor-item reveal">
+            <span>奖学金</span>
+            <p>校级优秀学生一等奖学金；第二届“奇安信”奖学金</p>
+          </article>
+          <article class="honor-item reveal">
+            <span>数学建模</span>
+            <p>2026 年美国大学生数学建模竞赛 H 奖；2025 年全国大学生数学建模竞赛广东省级三等奖</p>
+          </article>
+          <article class="honor-item reveal">
+            <span>创新创业</span>
+            <p>第十五届“挑战杯”广东大学生创业计划竞赛银奖；第九届强网杯创新创业专项赛全国三等奖</p>
+          </article>
+          <article class="honor-item reveal">
+            <span>社会实践</span>
+            <p>“百千万工程”三下乡社会实践校级“优秀个人”</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section band" id="skills">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skills</p>
+          <h2>能力结构</h2>
+        </div>
+
+        <div class="skill-layout">
+          <div class="skill-column reveal">
+            <h3>编程与数据</h3>
+            <div class="skill-list">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>C++</span>
+              <span>C</span>
+            </div>
+          </div>
+          <div class="skill-column reveal">
+            <h3>算法与 AI</h3>
+            <div class="skill-list">
+              <span>计算机视觉</span>
+              <span>深度学习</span>
+              <span>多模态学习</span>
+              <span>Transformer 检测模型</span>
+              <span>DINO</span>
+            </div>
+          </div>
+          <div class="skill-column reveal">
+            <h3>工程与表达</h3>
+            <div class="skill-list warm">
+              <span>模型训练/调参</span>
+              <span>前后端接口</span>
+              <span>系统集成</span>
+              <span>可视化开发</span>
+              <span>实验设计</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Experience</p>
+          <h2>实习经历</h2>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-item reveal">
+            <span>2025/01 - 2025/03</span>
+            <h3>杭州云鼎文化创意有限公司</h3>
+          </article>
+          <article class="experience-item reveal">
+            <span>2025/07 - 2025/08</span>
+            <h3>深圳市霸王实业集团有限公司</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 杨雨潼</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
